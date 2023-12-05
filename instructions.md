@@ -23,6 +23,8 @@ In this week's project, it's time to flex your redux muscles and build an applic
 
 - Use styled components instead of vanilla CSS to do your styling.
 
+- Add a box to the side where the completed tasks will be moved to once they are checked, at uncheck- move back to tasklist of unchecked.
+
 ### Advanced
 
 - Add a date input to your new task form to set a due date on a task. It could be required, or optional - it's up to you. You could then display this in the list and style it differently when a task is overdue.

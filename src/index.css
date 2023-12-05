@@ -11,4 +11,139 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: wheat;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.parent p {
+  margin-top: 5px; 
+  margin-bottom: 5px; 
+}
+
+.parent form {
+  width: 100%; 
+  max-width: 600px; 
+  margin: 0 auto; 
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.parent input[type="text"] {
+  width: 80%; 
+  padding: 10px 15px; 
+  display: block; 
+  border: 1px solid #ccc; 
+  border-radius: 5px; 
+  box-sizing: border-box;  
+}
+
+
+.parent button[type="submit"] {
+  background-color: #4CAF50; 
+  color: white; 
+  padding: 10px 20px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer;
+  font-size: 16px; 
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.parent button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.todolist {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  margin: 0 auto;
+  max-width: 500px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.todolist-keep-left {
+  display: flex;
+  align-items: center;
+}
+
+.todolist input[type='checkbox'] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+.todolist button {
+  background-color: red;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  margin-left: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.todolist button:hover {
+  background-color: darkred;
+}
+
+.to-do-completed {
+  font-size: 20px;
+  text-decoration: line-through;
+  color: green;
+}
+
+.to-do-due {
+  font-size: 20px;
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+  .parent form, .todolist {
+    width: 90%;
+    max-width: none;
+    margin-left: 5%; 
+    margin-right: 5%; 
+  }
+
+  .parent {
+    margin-top: 10px;
+    margin-left: 10px; 
+    margin-right: 10px; 
+  }
+
+  .parent input[type="text"], .parent button[type="submit"] {
+    width: 100%; 
+  }
+
+  .todolist {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }

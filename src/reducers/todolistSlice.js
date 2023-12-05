@@ -7,8 +7,11 @@ export const todolistSlice = createSlice({
     },
     reducers: {
         addToDo: (state, action) => {
-            state.items.push({id: Date.now(), text: action.payload })
-            
+            state.items.push({
+                id: Date.now(), 
+                text: action.payload,
+                completed: false
+            })
         },
         toggleToDo: (state, action) => {
             const todo = state.items.find(todo => todo.id === action.payload)
@@ -23,5 +26,4 @@ export const todolistSlice = createSlice({
 })
 
 export const { addToDo, toggleToDo, removeToDo } = todolistSlice.actions
-
 export default todolistSlice.reducer
